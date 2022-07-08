@@ -4,7 +4,6 @@ pipeline
 
     tools 
     {
-
         maven "Maven_3"
     }
 
@@ -14,7 +13,7 @@ pipeline
         {
             steps 
             {
-                sh 'mvn clean compile'
+                echo 'building'
             }
 
         }    
@@ -22,7 +21,7 @@ pipeline
         {
             steps 
             {
-                sh 'mvn test'
+                echo 'testing'
             }
         
         }
@@ -30,7 +29,7 @@ pipeline
         {
             steps 
             {
-                sh 'mvn deploy'
+                echo 'deployment'
             }
             post
             {
