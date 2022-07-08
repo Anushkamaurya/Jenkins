@@ -14,7 +14,7 @@ pipeline
         {
             steps 
             {
-                sh "mvn clean compile"
+                sh 'mvn clean compile'
             }
 
         }    
@@ -22,7 +22,7 @@ pipeline
         {
             steps 
             {
-                sh "mvn test"
+                sh 'mvn test'
             }
         
         }
@@ -30,7 +30,7 @@ pipeline
         {
             steps 
             {
-                sh "mvn deploy"
+                sh 'mvn deploy'
             }
             post
             {
